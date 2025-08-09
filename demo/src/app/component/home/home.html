@@ -1,0 +1,30 @@
+
+<h2>people data</h2>
+<h2 class="mb-3">People Data</h2>
+
+<div class="table-responsive" style="max-width: 600px;">
+  <table class="table table-striped table-bordered table-hover">
+    <thead class="table-dark">
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let person of people">
+        <td>
+          <input type="number" [(ngModel)]="person.id" placeholder="Id" class="form-control">
+        </td>
+        <td>
+          <input type="text" [(ngModel)]="person.name" placeholder="Name" class="form-control">
+        </td>
+        <td>
+          <input type="number" [(ngModel)]="person.age" placeholder="Age" class="form-control">
+        </td>
+      </tr>
+      <!-- Additional data rows can go here -->
+    </tbody>
+  </table>
+</div>
+

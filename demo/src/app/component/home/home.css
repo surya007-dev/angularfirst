@@ -1,0 +1,16 @@
+table{
+  width: 50px;
+border-collapse: collapse;
+  margin: 16px 0;
+}
+th, td {
+  border: 1px solid #aaa;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+input {
+  width: 90%;
+  padding: 14px;
+  box-sizing: border-box;
+}
